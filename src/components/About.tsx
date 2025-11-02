@@ -4,24 +4,25 @@ const About = () => {
   const highlights = [
     {
       icon: '',
-      title: 'Fixed-Price Contracts',
+      title: 'Weekly Demos',
       description:
-        'Clear project scope and timeline with fixed pricing. No surprises or hidden costs.',
+        'Every Friday: working features demo, progress update, and next week plan. No surprises.',
     },
     {
       icon: '',
-      title: 'Experienced Team',
-      description: 'Senior developers with 5+ years experience. Based in Bangkok, Thailand.',
+      title: 'Thai Team, English Ready',
+      description:
+        'Developed by experienced Thai engineers. Full communication in English or Thai. Same timezone, no language barriers.',
     },
     {
       icon: '',
-      title: 'Modern Technologies',
-      description: 'React, Angular, Node.js, Java, Golang, AWS, GCP, Docker, Kubernetes.',
+      title: 'You Own the Code',
+      description: 'Git access from day one. Clean, documented code. No vendor lock-in.',
     },
     {
       icon: '',
-      title: 'Bilingual Team',
-      description: 'Fluent in Thai and English. Clear communication throughout the project.',
+      title: '2-Hour Response',
+      description: 'Business hours (Mon-Fri, 9AM-6PM). Dedicated communication channel.',
     },
   ]
 
@@ -29,9 +30,9 @@ const About = () => {
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="section-title">Why Work With Us</h2>
+          <h2 className="section-title">Why Choose Us</h2>
           <p className="section-subtitle">
-            Experienced team based in Bangkok, delivering quality software since 2020
+            Transparent process. No vendor lock-in. Based in Bangkok.
           </p>
         </div>
 

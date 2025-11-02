@@ -19,13 +19,31 @@ const Footer = () => {
               <h4 className="footer-heading">Services</h4>
               <ul>
                 <li>
-                  <a href="#services">Planning & Architecture</a>
+                  <a href="#services">Fixed-Price Development</a>
                 </li>
                 <li>
-                  <a href="#services">Software Development</a>
+                  <a href="#services">Secure & Compliant Systems</a>
                 </li>
                 <li>
-                  <a href="#services">Cloud & DevOps</a>
+                  <a href="#services">Cloud Infrastructure</a>
+                </li>
+                <li>
+                  <a href="#services">Maintenance Agreement</a>
+                </li>
+              </ul>
+            </div>
+
+            <div className="footer-column">
+              <h4 className="footer-heading">Industries</h4>
+              <ul>
+                <li>
+                  <a href="#industries">Healthcare</a>
+                </li>
+                <li>
+                  <a href="#industries">Banking & Finance</a>
+                </li>
+                <li>
+                  <a href="#industries">Insurance</a>
                 </li>
               </ul>
             </div>
@@ -34,10 +52,10 @@ const Footer = () => {
               <h4 className="footer-heading">Company</h4>
               <ul>
                 <li>
-                  <a href="#about">About Us</a>
+                  <a href="#about">How We Work</a>
                 </li>
                 <li>
-                  <a href="#contact">Contact</a>
+                  <a href="#contact">Start Your Project</a>
                 </li>
               </ul>
             </div>

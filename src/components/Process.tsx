@@ -4,35 +4,27 @@ const Process = () => {
   const steps = [
     {
       number: '01',
-      title: 'Discovery',
+      title: 'Discovery & Proposal',
       description:
-        'We start with understanding your business goals, technical requirements, and constraints.',
-      duration: '1-2 weeks',
+        'Requirements workshop to map your business needs. Deliverables: scope document, technical design, and fixed-price quote.',
+      simple: '3-5 days',
+      complex: '1-2 weeks',
     },
     {
       number: '02',
-      title: 'Planning',
-      description: 'Detailed technical architecture, project timeline, and resource allocation.',
-      duration: '1 week',
+      title: 'Development',
+      description:
+        'Iterative builds with Friday demos. Code pushed to your GitHub/GitLab daily. You review progress weekly, not at the end.',
+      simple: '2-4 weeks',
+      complex: '8-12 weeks',
     },
     {
       number: '03',
-      title: 'Development',
+      title: 'Launch & Transfer',
       description:
-        'Agile sprints with weekly demos. You see progress every week, not just at the end.',
-      duration: '4-12 weeks',
-    },
-    {
-      number: '04',
-      title: 'Deployment',
-      description: 'CI/CD setup, cloud infrastructure, monitoring, and production launch.',
-      duration: '1-2 weeks',
-    },
-    {
-      number: '05',
-      title: 'Support',
-      description: 'Post-launch monitoring, bug fixes, and ongoing maintenance as needed.',
-      duration: 'Ongoing',
+        'UAT on staging, production deployment, monitoring setup. Complete handover: credentials, docs, and training session.',
+      simple: '3-5 days',
+      complex: '1-2 weeks',
     },
   ]
 
@@ -41,7 +33,7 @@ const Process = () => {
       <div className="process-container">
         <div className="process-header">
           <h2 className="section-title">How We Work</h2>
-          <p className="section-subtitle">Transparent process, regular updates, no surprises</p>
+          <p className="section-subtitle">Three-phase approach. Weekly visibility. No surprises.</p>
         </div>
 
         <div className="process-timeline">
@@ -55,17 +47,24 @@ const Process = () => {
               <div className="step-content">
                 <h3 className="step-title">{step.title}</h3>
                 <p className="step-description">{step.description}</p>
-                <div className="step-duration">⏱️ {step.duration}</div>
+                <div className="step-timelines">
+                  <div className="timeline-item">
+                    <span className="timeline-label">Simple:</span>
+                    <span className="timeline-value">{step.simple}</span>
+                  </div>
+                  <div className="timeline-item">
+                    <span className="timeline-label">Complex:</span>
+                    <span className="timeline-value">{step.complex}</span>
+                  </div>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
         <div className="process-note">
-          <p>
-            <strong>Average project timeline:</strong> 6-14 weeks from kickoff to production
-          </p>
-          <p>Most projects start within 1-2 weeks of contract signing</p>
+          <strong>Total timeline:</strong> Simple apps ~4-6 weeks | Complex systems ~10-14 weeks |
+          Fixed quote after scoping
         </div>
       </div>
     </section>

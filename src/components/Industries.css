@@ -1,81 +1,99 @@
-.about {
+.industries {
   padding: 6rem 2rem;
   background: white;
 }
 
-.about-container {
+.industries-container {
   max-width: 1100px;
   margin: 0 auto;
 }
 
-.about-header {
+.industries-header {
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.highlights-grid {
+.industries-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-bottom: 3rem;
 }
 
-.highlight-card {
+.industry-card {
   background: white;
+  padding: 2rem;
   border-radius: 12px;
-  padding: 1.75rem;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  text-align: center;
   transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
-  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
-.highlight-card:hover {
+.industry-card:hover {
   box-shadow: 0 4px 20px rgba(20, 184, 166, 0.12);
   border-color: #14b8a6;
 }
 
-.highlight-title {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #0f172a;
-  margin-bottom: 0.6rem;
-  line-height: 1.3;
+.industry-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
-.highlight-description {
+.industry-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.industry-description {
   color: #64748b;
   line-height: 1.6;
+  margin-bottom: 1rem;
   font-size: 0.9rem;
 }
 
-.about-stats {
+.industry-highlight {
+  display: inline-block;
+  background: #14b8a6;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.industries-proof {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 3rem;
   padding: 3rem;
-  background: white;
+  background: linear-gradient(135deg, #0f172a 0%, #14b8a6 100%);
   border-radius: 20px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 40px rgba(20, 184, 166, 0.2);
 }
 
-.stat {
+.proof-item {
   text-align: center;
 }
 
-.stat-number {
+.proof-number {
   font-size: 3rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #14b8a6 0%, #0891b2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: white;
   margin-bottom: 0.5rem;
+  line-height: 1;
 }
 
-.stat-label {
+.proof-label {
   font-size: 1rem;
-  color: #4a5568;
+  color: rgba(255, 255, 255, 0.9);
   font-weight: 500;
 }
 
@@ -91,31 +109,31 @@
 }
 
 @media (max-width: 968px) {
-  .highlights-grid {
+  .industries-grid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (max-width: 768px) {
-  .about {
+  .industries {
     padding: 4rem 1.5rem;
   }
 
-  .about-header {
+  .industries-header {
     margin-bottom: 2rem;
   }
 
-  .highlight-card {
-    padding: 1.5rem;
+  .industry-card {
+    padding: 1.75rem;
   }
 
-  .about-stats {
+  .industries-proof {
     grid-template-columns: 1fr;
     gap: 2rem;
     padding: 2rem;
   }
 
-  .stat-number {
+  .proof-number {
     font-size: 2.5rem;
   }
 }
