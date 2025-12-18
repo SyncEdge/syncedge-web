@@ -15,10 +15,10 @@ spec:
         app: syncedge-web
     spec:
       imagePullSecrets:
-        - name: ghcr-secret
+        - name: gar-secret
       containers:
         - name: syncedge-web
-          image: ghcr.io/syncedge/syncedge-web:latest
+          image: IMAGE_PLACEHOLDER
           ports:
             - containerPort: 80
           resources:
