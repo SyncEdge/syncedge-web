@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: syncedge-web
+  annotations:
+    kubernetes.io/ingress.class: traefik
+spec:
+  rules:
+    - host: syncedge-web.local
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: syncedge-web
+                port:
+                  number: 80

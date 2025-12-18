@@ -60,6 +60,33 @@
   border-color: #14b8a6;
 }
 
+.service-card:hover .service-icon-wrapper {
+  background: #14b8a6;
+}
+
+.service-card:hover .service-icon {
+  color: white;
+}
+
+.service-icon-wrapper {
+  width: 56px;
+  height: 56px;
+  background: linear-gradient(135deg, rgba(20, 184, 166, 0.1) 0%, rgba(20, 184, 166, 0.05) 100%);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+  transition: all 0.3s ease;
+}
+
+.service-icon {
+  width: 28px;
+  height: 28px;
+  color: #14b8a6;
+  transition: color 0.3s ease;
+}
+
 .service-title {
   font-size: 1.35rem;
   font-weight: 700;
