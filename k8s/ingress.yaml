@@ -6,7 +6,17 @@ metadata:
     kubernetes.io/ingress.class: traefik
 spec:
   rules:
-    - host: syncedge-web.local
+    - host: syncedge.tech
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: syncedge-web
+                port:
+                  number: 80
+    - host: www.syncedge.tech
       http:
         paths:
           - path: /
