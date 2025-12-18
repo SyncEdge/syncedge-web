@@ -87,10 +87,10 @@ jobs:
 
       - name: Wait for rollout
         run: |
-          sudo kubectl rollout status deployment/syncedge-web --timeout=300s
+          sudo kubectl rollout status deployment/syncedge-web -n syncedge-web --timeout=300s
 
       - name: Verify deployment
         run: |
-          sudo kubectl get pods -l app=syncedge-web
-          sudo kubectl get svc syncedge-web
-          sudo kubectl get ingress syncedge-web
+          sudo kubectl get pods -l app=syncedge-web -n syncedge-web
+          sudo kubectl get svc syncedge-web -n syncedge-web
+          sudo kubectl get ingress syncedge-web -n syncedge-web
