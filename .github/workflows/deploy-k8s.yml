@@ -77,3 +77,4 @@ jobs:
         run: |
           echo "✅ Image pushed to GAR"
           echo "🔄 ArgoCD will auto-sync within ~3 minutes"
+# Pipeline trigger Sat Dec 20 01:08:23 +07 2025
