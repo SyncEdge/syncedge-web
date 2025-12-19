@@ -55,7 +55,7 @@ jobs:
         with:
           registry: ${{ env.REGISTRY }}
           username: _json_key
-          password: ${{ secrets.GAR_JSON_KEY }}
+          password: ${{ secrets.GCP_SA_KEY }}
 
       - name: Generate image tags
         id: meta
