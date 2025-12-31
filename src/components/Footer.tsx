@@ -131,7 +131,7 @@ const Footer = () => {
         <div className="footer-divider"></div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} SyncEdge. All rights reserved.</p>
+          <p>&copy; {currentYear} SyncEdge Solution (Thailand) Co., Ltd. All rights reserved.</p>
           <div className="footer-social">
             <a
               href="https://linkedin.com"
