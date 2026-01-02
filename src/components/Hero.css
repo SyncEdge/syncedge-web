@@ -144,6 +144,10 @@
   margin-bottom: 1.75rem;
   border: 1px solid rgba(20, 184, 166, 0.2);
   animation: fadeInUp 0.6s ease-out;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .badge-dot {
@@ -189,6 +193,8 @@
   max-width: 540px;
   font-weight: 400;
   animation: fadeInUp 0.7s ease-out 0.2s backwards;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Stats */
@@ -235,6 +241,8 @@
   font-size: 0.85rem;
   color: #64748b;
   font-weight: 500;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* CTA Buttons */
@@ -499,6 +507,8 @@
   color: #94a3b8;
   line-height: 1.5;
   margin: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 /* Principles footer */
