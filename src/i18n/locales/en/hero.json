@@ -1,0 +1,51 @@
+{
+  "badge": "Bangkok-Based • Fixed Pricing • 6-12 Weeks",
+  "title": {
+    "line1": "Software That Solves",
+    "line2": "Real Business Problems"
+  },
+  "subtitle": "End-to-end solutions focused on business value. From discovery to deployment, we deliver software that drives results—not just features.",
+  "stats": {
+    "delivery": {
+      "value": "6-12",
+      "label": "Weeks Delivery"
+    },
+    "pricing": {
+      "value": "Fixed",
+      "label": "Price Guarantee"
+    },
+    "ownership": {
+      "value": "100%",
+      "label": "Code Ownership"
+    }
+  },
+  "cta": {
+    "primary": "Get a Quote",
+    "secondary": "How We Work"
+  },
+  "trust": {
+    "noVendorLock": "No vendor lock-in",
+    "fullOwnership": "Full code ownership",
+    "weeklyDemos": "Weekly demos"
+  },
+  "principles": {
+    "badge": "Our Philosophy",
+    "title": "We Value What You Value",
+    "subtitle": "Working software that delivers business results",
+    "cards": [
+      {
+        "name": "Your Bottom Line",
+        "text": "Increase revenue, reduce costs, mitigate risks"
+      },
+      {
+        "name": "Your Time",
+        "text": "Fast delivery. No endless meetings or scope creep"
+      },
+      {
+        "name": "Your Budget",
+        "text": "Fixed price. No surprises. Know costs upfront"
+      }
+    ],
+    "delivery": "6-12 weeks typical delivery"
+  }
+}

@@ -1,7 +1,10 @@
 import { useState, useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import LanguageSwitcher from './LanguageSwitcher'
 import './Navigation.css'
 
 const Navigation = () => {
+  const { t } = useTranslation('common')
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [scrollProgress, setScrollProgress] = useState(0)
@@ -48,17 +51,20 @@ const Navigation = () => {
 
         <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
           <li>
-            <a onClick={() => scrollToSection('services')}>Services</a>
+            <a onClick={() => scrollToSection('services')}>{t('nav.services')}</a>
           </li>
           <li>
-            <a onClick={() => scrollToSection('industries')}>Industries</a>
+            <a onClick={() => scrollToSection('industries')}>{t('nav.industries')}</a>
           </li>
           <li>
-            <a onClick={() => scrollToSection('about')}>About</a>
+            <a onClick={() => scrollToSection('about')}>{t('nav.about')}</a>
+          </li>
+          <li className="nav-lang-switcher">
+            <LanguageSwitcher />
           </li>
           <li>
             <a onClick={() => scrollToSection('contact')} className="nav-cta">
-              Get a Quote
+              {t('nav.getQuote')}
             </a>
           </li>
         </ul>

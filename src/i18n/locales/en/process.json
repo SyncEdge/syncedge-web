@@ -1,0 +1,37 @@
+{
+  "title": "How We Work",
+  "subtitle": "Three-phase approach. Weekly visibility. No surprises.",
+  "steps": [
+    {
+      "number": "01",
+      "title": "Discovery & Proposal",
+      "description": "Requirements workshop to map your business needs. Deliverables: scope document, technical design, and fixed-price quote.",
+      "simple": "3-5 days",
+      "complex": "1-2 weeks"
+    },
+    {
+      "number": "02",
+      "title": "Development",
+      "description": "Iterative builds with Friday demos. Code pushed to your GitHub/GitLab daily. You review progress weekly, not at the end.",
+      "simple": "2-4 weeks",
+      "complex": "8-12 weeks"
+    },
+    {
+      "number": "03",
+      "title": "Launch & Transfer",
+      "description": "UAT on staging, production deployment, monitoring setup. Complete handover: credentials, docs, and training session.",
+      "simple": "3-5 days",
+      "complex": "1-2 weeks"
+    }
+  ],
+  "labels": {
+    "simple": "Simple:",
+    "complex": "Complex:"
+  },
+  "timeline": {
+    "label": "Total timeline:",
+    "simple": "Simple apps ~4-6 weeks",
+    "complex": "Complex systems ~10-14 weeks",
+    "note": "Fixed quote after scoping"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Built With Modern Technology",
+  "subtitle": "Enterprise-grade tools and frameworks trusted by leading companies worldwide",
+  "technologies": [
+    { "name": "React", "category": "Frontend" },
+    { "name": "TypeScript", "category": "Language" },
+    { "name": "Node.js", "category": "Backend" },
+    { "name": "Java", "category": "Backend" },
+    { "name": "Go", "category": "Backend" },
+    { "name": "PostgreSQL", "category": "Database" },
+    { "name": "AWS", "category": "Cloud" },
+    { "name": "GCP", "category": "Cloud" }
+  ],
+  "certifications": [
+    {
+      "title": "Secure Development",
+      "description": "OWASP best practices"
+    },
+    {
+      "title": "Data Protection",
+      "description": "PDPA compliant systems"
+    },
+    {
+      "title": "Cloud Architecture",
+      "description": "AWS & GCP certified patterns"
+    },
+    {
+      "title": "Audit Ready",
+      "description": "Complete documentation"
+    }
+  ]
+}

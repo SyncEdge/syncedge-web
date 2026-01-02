@@ -1,0 +1,22 @@
+{
+  "title": "Why Choose Us",
+  "subtitle": "Transparent process. No vendor lock-in. Based in Bangkok.",
+  "highlights": [
+    {
+      "title": "Weekly Demos",
+      "description": "Every Friday: working features demo, progress update, and next week plan. No surprises."
+    },
+    {
+      "title": "Thai Team, English Ready",
+      "description": "Developed by experienced Thai engineers. Full communication in English or Thai. Same timezone, no language barriers."
+    },
+    {
+      "title": "You Own the Code",
+      "description": "Git access from day one. Clean, documented code. No vendor lock-in."
+    },
+    {
+      "title": "2-Hour Response",
+      "description": "Business hours (Mon-Fri, 9AM-6PM). Dedicated communication channel."
+    }
+  ]
+}

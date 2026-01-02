@@ -1,0 +1,32 @@
+{
+  "title": "เทคโนโลยีที่เราใช้",
+  "subtitle": "เครื่องมือและเฟรมเวิร์คที่บริษัทใหญ่ทั่วโลกใช้กัน",
+  "technologies": [
+    { "name": "React", "category": "Frontend" },
+    { "name": "TypeScript", "category": "ภาษา" },
+    { "name": "Node.js", "category": "Backend" },
+    { "name": "Java", "category": "Backend" },
+    { "name": "Go", "category": "Backend" },
+    { "name": "PostgreSQL", "category": "ฐานข้อมูล" },
+    { "name": "AWS", "category": "Cloud" },
+    { "name": "GCP", "category": "Cloud" }
+  ],
+  "certifications": [
+    {
+      "title": "พัฒนาอย่างปลอดภัย",
+      "description": "ตามแนวปฏิบัติ OWASP"
+    },
+    {
+      "title": "คุ้มครองข้อมูล",
+      "description": "รองรับ PDPA"
+    },
+    {
+      "title": "Cloud ที่ถูกต้อง",
+      "description": "ตามแนวทาง AWS และ GCP"
+    },
+    {
+      "title": "พร้อมตรวจสอบ",
+      "description": "มีเอกสารครบถ้วน"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "services": "บริการ",
+    "industries": "อุตสาหกรรม",
+    "about": "เกี่ยวกับเรา",
+    "getQuote": "ขอใบเสนอราคา"
+  },
+  "footer": {
+    "tagline": "ทำซอฟต์แวร์ให้ธุรกิจในไทยและเอเชียตะวันออกเฉียงใต้ ราคาคงที่ ไม่มีบานปลาย",
+    "services": {
+      "title": "บริการ",
+      "fixedPrice": "พัฒนาราคาคงที่",
+      "secure": "ระบบปลอดภัยได้มาตรฐาน",
+      "cloud": "โครงสร้าง Cloud",
+      "maintenance": "สัญญาบำรุงรักษา"
+    },
+    "industries": {
+      "title": "อุตสาหกรรม",
+      "healthcare": "สาธารณสุข",
+      "banking": "ธนาคารและการเงิน",
+      "insurance": "ประกันภัย"
+    },
+    "company": {
+      "title": "บริษัท",
+      "whyUs": "ทำไมต้องเลือกเรา",
+      "getQuote": "ขอใบเสนอราคา"
+    },
+    "copyright": "© {{year}} SyncEdge Solution (Thailand) Co., Ltd. สงวนลิขสิทธิ์",
+    "legal": {
+      "privacy": "นโยบายความเป็นส่วนตัว",
+      "terms": "เงื่อนไขการใช้งาน"
+    },
+    "location": "กรุงเทพมหานคร"
+  },
+  "language": {
+    "en": "EN",
+    "th": "ไทย"
+  }
+}

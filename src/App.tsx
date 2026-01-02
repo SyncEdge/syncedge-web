@@ -8,9 +8,12 @@ import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import { useSEO } from './hooks/useSEO'
 import './App.css'
 
 function App() {
+  useSEO()
+
   return (
     <div className="app">
       <Navigation />

@@ -1,39 +1,23 @@
+import { useTranslation } from 'react-i18next'
 import './Process.css'
 
 const Process = () => {
-  const steps = [
-    {
-      number: '01',
-      title: 'Discovery & Proposal',
-      description:
-        'Requirements workshop to map your business needs. Deliverables: scope document, technical design, and fixed-price quote.',
-      simple: '3-5 days',
-      complex: '1-2 weeks',
-    },
-    {
-      number: '02',
-      title: 'Development',
-      description:
-        'Iterative builds with Friday demos. Code pushed to your GitHub/GitLab daily. You review progress weekly, not at the end.',
-      simple: '2-4 weeks',
-      complex: '8-12 weeks',
-    },
-    {
-      number: '03',
-      title: 'Launch & Transfer',
-      description:
-        'UAT on staging, production deployment, monitoring setup. Complete handover: credentials, docs, and training session.',
-      simple: '3-5 days',
-      complex: '1-2 weeks',
-    },
-  ]
+  const { t } = useTranslation('process')
+
+  const steps = t('steps', { returnObjects: true }) as Array<{
+    number: string
+    title: string
+    description: string
+    simple: string
+    complex: string
+  }>
 
   return (
     <section className="process">
       <div className="process-container">
         <div className="process-header">
-          <h2 className="section-title">How We Work</h2>
-          <p className="section-subtitle">Three-phase approach. Weekly visibility. No surprises.</p>
+          <h2 className="section-title">{t('title')}</h2>
+          <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
         <div className="process-timeline">
@@ -49,11 +33,11 @@ const Process = () => {
                 <p className="step-description">{step.description}</p>
                 <div className="step-timelines">
                   <div className="timeline-item">
-                    <span className="timeline-label">Simple:</span>
+                    <span className="timeline-label">{t('labels.simple')}</span>
                     <span className="timeline-value">{step.simple}</span>
                   </div>
                   <div className="timeline-item">
-                    <span className="timeline-label">Complex:</span>
+                    <span className="timeline-label">{t('labels.complex')}</span>
                     <span className="timeline-value">{step.complex}</span>
                   </div>
                 </div>
@@ -63,8 +47,8 @@ const Process = () => {
         </div>
 
         <div className="process-note">
-          <strong>Total timeline:</strong> Simple apps ~4-6 weeks | Complex systems ~10-14 weeks |
-          Fixed quote after scoping
+          <strong>{t('timeline.label')}</strong> {t('timeline.simple')} | {t('timeline.complex')} |{' '}
+          {t('timeline.note')}
         </div>
       </div>
     </section>

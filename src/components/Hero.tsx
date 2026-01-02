@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import './Hero.css'
 
 // Professional SVG Icons
@@ -57,6 +58,8 @@ const ArrowRightIcon = () => (
 )
 
 const Hero = () => {
+  const { t } = useTranslation('hero')
+
   const scrollToContact = () => {
     const element = document.getElementById('contact')
     if (element) {
@@ -71,22 +74,15 @@ const Hero = () => {
     }
   }
 
-  const principles = [
-    {
-      icon: <TargetIcon />,
-      name: 'Your Bottom Line',
-      text: 'Increase revenue, reduce costs, mitigate risks',
-    },
-    {
-      icon: <ClockIcon />,
-      name: 'Your Time',
-      text: 'Fast delivery. No endless meetings or scope creep',
-    },
-    {
-      icon: <WalletIcon />,
-      name: 'Your Budget',
-      text: 'Fixed price. No surprises. Know costs upfront',
-    },
+  const principleCards = t('principles.cards', { returnObjects: true }) as Array<{
+    name: string
+    text: string
+  }>
+
+  const principleIcons = [
+    <TargetIcon key="target" />,
+    <ClockIcon key="clock" />,
+    <WalletIcon key="wallet" />,
   ]
 
   return (
@@ -107,47 +103,44 @@ const Hero = () => {
         <div className="hero-content">
           <div className="hero-badge">
             <span className="badge-dot"></span>
-            Bangkok-Based • Fixed Pricing • 6-12 Weeks
+            {t('badge')}
           </div>
 
           <h1 className="hero-title">
-            <span className="title-line">Software That Solves</span>
-            <span className="gradient-text">Real Business Problems</span>
+            <span className="title-line">{t('title.line1')}</span>
+            <span className="gradient-text">{t('title.line2')}</span>
           </h1>
 
-          <p className="hero-subtitle">
-            End-to-end solutions focused on business value. From discovery to deployment, we deliver
-            software that drives results—not just features.
-          </p>
+          <p className="hero-subtitle">{t('subtitle')}</p>
 
           <div className="hero-stats">
             <div className="stat-item">
               <div className="stat-number">
-                <span className="stat-value">6-12</span>
+                <span className="stat-value">{t('stats.delivery.value')}</span>
               </div>
-              <div className="stat-label">Weeks Delivery</div>
+              <div className="stat-label">{t('stats.delivery.label')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">
-                <span className="stat-value">Fixed</span>
+                <span className="stat-value">{t('stats.pricing.value')}</span>
               </div>
-              <div className="stat-label">Price Guarantee</div>
+              <div className="stat-label">{t('stats.pricing.label')}</div>
             </div>
             <div className="stat-item">
               <div className="stat-number">
-                <span className="stat-value">100%</span>
+                <span className="stat-value">{t('stats.ownership.value')}</span>
               </div>
-              <div className="stat-label">Code Ownership</div>
+              <div className="stat-label">{t('stats.ownership.label')}</div>
             </div>
           </div>
 
           <div className="hero-cta">
             <button className="btn btn-primary" onClick={scrollToContact}>
-              <span>Get a Quote</span>
+              <span>{t('cta.primary')}</span>
               <ArrowRightIcon />
             </button>
             <button className="btn btn-secondary" onClick={scrollToServices}>
-              <span>How We Work</span>
+              <span>{t('cta.secondary')}</span>
             </button>
           </div>
 
@@ -155,15 +148,15 @@ const Hero = () => {
           <div className="hero-trust">
             <div className="trust-item">
               <CheckCircleIcon />
-              <span>No vendor lock-in</span>
+              <span>{t('trust.noVendorLock')}</span>
             </div>
             <div className="trust-item">
               <CheckCircleIcon />
-              <span>Full code ownership</span>
+              <span>{t('trust.fullOwnership')}</span>
             </div>
             <div className="trust-item">
               <CheckCircleIcon />
-              <span>Weekly demos</span>
+              <span>{t('trust.weeklyDemos')}</span>
             </div>
           </div>
         </div>
@@ -174,20 +167,20 @@ const Hero = () => {
             <div className="principle-header">
               <div className="principle-badge">
                 <span className="badge-pulse"></span>
-                Our Philosophy
+                {t('principles.badge')}
               </div>
-              <h3 className="principle-title">We Value What You Value</h3>
-              <p className="principle-subtitle">Working software that delivers business results</p>
+              <h3 className="principle-title">{t('principles.title')}</h3>
+              <p className="principle-subtitle">{t('principles.subtitle')}</p>
             </div>
 
             <div className="principles-grid">
-              {principles.map((principle, index) => (
+              {principleCards.map((principle, index) => (
                 <div
                   key={index}
                   className="principle-card"
                   style={{ animationDelay: `${0.6 + index * 0.15}s` }}
                 >
-                  <div className="principle-icon-wrapper">{principle.icon}</div>
+                  <div className="principle-icon-wrapper">{principleIcons[index]}</div>
                   <div className="principle-content">
                     <h4 className="principle-name">{principle.name}</h4>
                     <p className="principle-text">{principle.text}</p>
@@ -199,7 +192,7 @@ const Hero = () => {
             <div className="principles-footer">
               <div className="delivery-badge">
                 <span className="delivery-icon">⚡</span>
-                <span>6-12 weeks typical delivery</span>
+                <span>{t('principles.delivery')}</span>
               </div>
             </div>
           </div>

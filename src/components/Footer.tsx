@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import './Footer.css'
 
 const LinkedInIcon = () => (
@@ -45,6 +46,7 @@ const LocationIcon = () => (
 )
 
 const Footer = () => {
+  const { t } = useTranslation('common')
   const currentYear = new Date().getFullYear()
 
   const scrollToSection = (sectionId: string) => {
@@ -60,10 +62,7 @@ const Footer = () => {
         <div className="footer-top">
           <div className="footer-brand">
             <h3 className="footer-logo">SyncEdge</h3>
-            <p className="footer-tagline">
-              Building reliable software solutions for businesses across Thailand and Southeast
-              Asia. Fixed-price development with no surprises.
-            </p>
+            <p className="footer-tagline">{t('footer.tagline')}</p>
             <div className="footer-contact-info">
               <a href="mailto:contact@syncedge.tech" className="footer-contact-item">
                 <EmailIcon />
@@ -75,53 +74,63 @@ const Footer = () => {
               </a>
               <div className="footer-contact-item">
                 <LocationIcon />
-                <span>Bangkok, Thailand</span>
+                <span>{t('footer.location')}</span>
               </div>
             </div>
           </div>
 
           <div className="footer-links">
             <div className="footer-column">
-              <h4 className="footer-heading">Services</h4>
+              <h4 className="footer-heading">{t('footer.services.title')}</h4>
               <ul>
                 <li>
-                  <a onClick={() => scrollToSection('services')}>Fixed-Price Development</a>
+                  <a onClick={() => scrollToSection('services')}>
+                    {t('footer.services.fixedPrice')}
+                  </a>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('services')}>Secure & Compliant Systems</a>
+                  <a onClick={() => scrollToSection('services')}>{t('footer.services.secure')}</a>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('services')}>Cloud Infrastructure</a>
+                  <a onClick={() => scrollToSection('services')}>{t('footer.services.cloud')}</a>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('services')}>Maintenance Agreement</a>
+                  <a onClick={() => scrollToSection('services')}>
+                    {t('footer.services.maintenance')}
+                  </a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h4 className="footer-heading">Industries</h4>
+              <h4 className="footer-heading">{t('footer.industries.title')}</h4>
               <ul>
                 <li>
-                  <a onClick={() => scrollToSection('industries')}>Healthcare</a>
+                  <a onClick={() => scrollToSection('industries')}>
+                    {t('footer.industries.healthcare')}
+                  </a>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('industries')}>Banking & Finance</a>
+                  <a onClick={() => scrollToSection('industries')}>
+                    {t('footer.industries.banking')}
+                  </a>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('industries')}>Insurance</a>
+                  <a onClick={() => scrollToSection('industries')}>
+                    {t('footer.industries.insurance')}
+                  </a>
                 </li>
               </ul>
             </div>
 
             <div className="footer-column">
-              <h4 className="footer-heading">Company</h4>
+              <h4 className="footer-heading">{t('footer.company.title')}</h4>
               <ul>
                 <li>
-                  <a onClick={() => scrollToSection('about')}>Why Choose Us</a>
+                  <a onClick={() => scrollToSection('about')}>{t('footer.company.whyUs')}</a>
                 </li>
                 <li>
-                  <a onClick={() => scrollToSection('contact')}>Get a Quote</a>
+                  <a onClick={() => scrollToSection('contact')}>{t('footer.company.getQuote')}</a>
                 </li>
               </ul>
             </div>
@@ -131,7 +140,7 @@ const Footer = () => {
         <div className="footer-divider"></div>
 
         <div className="footer-bottom">
-          <p>&copy; {currentYear} SyncEdge Solution (Thailand) Co., Ltd. All rights reserved.</p>
+          <p>{t('footer.copyright', { year: currentYear })}</p>
           <div className="footer-social">
             <a
               href="https://linkedin.com"
@@ -144,9 +153,9 @@ const Footer = () => {
             </a>
           </div>
           <div className="footer-legal">
-            <a onClick={() => scrollToSection('contact')}>Privacy Policy</a>
+            <a onClick={() => scrollToSection('contact')}>{t('footer.legal.privacy')}</a>
             <span className="separator">•</span>
-            <a onClick={() => scrollToSection('contact')}>Terms of Service</a>
+            <a onClick={() => scrollToSection('contact')}>{t('footer.legal.terms')}</a>
           </div>
         </div>
       </div>

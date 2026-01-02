@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import './About.css'
 
 const CalendarIcon = () => (
@@ -81,35 +82,19 @@ const ClockIcon = () => (
 const highlightIcons = [CalendarIcon, TeamIcon, CodeIcon, ClockIcon]
 
 const About = () => {
-  const highlights = [
-    {
-      title: 'Weekly Demos',
-      description:
-        'Every Friday: working features demo, progress update, and next week plan. No surprises.',
-    },
-    {
-      title: 'Thai Team, English Ready',
-      description:
-        'Developed by experienced Thai engineers. Full communication in English or Thai. Same timezone, no language barriers.',
-    },
-    {
-      title: 'You Own the Code',
-      description: 'Git access from day one. Clean, documented code. No vendor lock-in.',
-    },
-    {
-      title: '2-Hour Response',
-      description: 'Business hours (Mon-Fri, 9AM-6PM). Dedicated communication channel.',
-    },
-  ]
+  const { t } = useTranslation('about')
+
+  const highlights = t('highlights', { returnObjects: true }) as Array<{
+    title: string
+    description: string
+  }>
 
   return (
     <section id="about" className="about">
       <div className="about-container">
         <div className="about-header">
-          <h2 className="section-title">Why Choose Us</h2>
-          <p className="section-subtitle">
-            Transparent process. No vendor lock-in. Based in Bangkok.
-          </p>
+          <h2 className="section-title">{t('title')}</h2>
+          <p className="section-subtitle">{t('subtitle')}</p>
         </div>
 
         <div className="highlights-grid">

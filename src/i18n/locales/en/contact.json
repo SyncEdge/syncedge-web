@@ -1,0 +1,17 @@
+{
+  "title": "Start Your Project",
+  "description": "Get a detailed project proposal within 48 hours. Share your requirements and we'll provide a fixed-price quote with timeline.",
+  "cta": {
+    "email": "Send Email",
+    "call": "Call Now"
+  },
+  "labels": {
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location"
+  },
+  "values": {
+    "location": "Bangkok, Thailand"
+  },
+  "note": "Response time: Within 2 hours during business hours (Mon-Fri, 9AM-6PM Bangkok time)"
+}

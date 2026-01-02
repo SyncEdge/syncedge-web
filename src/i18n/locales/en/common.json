@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "services": "Services",
+    "industries": "Industries",
+    "about": "About",
+    "getQuote": "Get a Quote"
+  },
+  "footer": {
+    "tagline": "Building reliable software solutions for businesses across Thailand and Southeast Asia. Fixed-price development with no surprises.",
+    "services": {
+      "title": "Services",
+      "fixedPrice": "Fixed-Price Development",
+      "secure": "Secure & Compliant Systems",
+      "cloud": "Cloud Infrastructure",
+      "maintenance": "Maintenance Agreement"
+    },
+    "industries": {
+      "title": "Industries",
+      "healthcare": "Healthcare",
+      "banking": "Banking & Finance",
+      "insurance": "Insurance"
+    },
+    "company": {
+      "title": "Company",
+      "whyUs": "Why Choose Us",
+      "getQuote": "Get a Quote"
+    },
+    "copyright": "© {{year}} SyncEdge Solution (Thailand) Co., Ltd. All rights reserved.",
+    "legal": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
+    },
+    "location": "Bangkok, Thailand"
+  },
+  "language": {
+    "en": "EN",
+    "th": "TH"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "From Simple Apps to Complex Systems",
+  "subtitle": "Whether you need a straightforward business application or a mission-critical system for regulated industries—we deliver at the quality level you need",
+  "cards": [
+    {
+      "name": "Healthcare",
+      "icon": "🏥",
+      "description": "From simple appointment systems to full hospital management platforms",
+      "highlight": "Any complexity level"
+    },
+    {
+      "name": "Banking & Finance",
+      "icon": "🏦",
+      "description": "Payment integrations to full financial systems with compliance",
+      "highlight": "Secure by default"
+    },
+    {
+      "name": "Insurance",
+      "icon": "🛡️",
+      "description": "Quote calculators to complete claims processing platforms",
+      "highlight": "Scalable solutions"
+    }
+  ],
+  "proof": {
+    "scale": {
+      "number": "Any Scale",
+      "label": "Simple to Complex"
+    },
+    "price": {
+      "number": "Fixed Price",
+      "label": "No Hourly Billing"
+    },
+    "delivery": {
+      "number": "6-12 Weeks",
+      "label": "Typical Delivery"
+    }
+  }
+}
