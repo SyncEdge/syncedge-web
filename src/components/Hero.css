@@ -182,7 +182,7 @@
   display: block;
   background-size: 200% auto;
   animation: gradient-shift 8s ease infinite;
-  height: 80px;
+  line-height: 80px;
 }
 
 /* Subtitle */
